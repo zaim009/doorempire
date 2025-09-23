@@ -277,7 +277,7 @@ body {
 
 .product-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
 }
 
 .product-card img {
