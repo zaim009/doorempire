@@ -281,7 +281,7 @@ body {
 }
 
 .product-card img {
-  width: 100%;
+  width: 50%;
   height: 250px;
   object-fit: cover;
 }
