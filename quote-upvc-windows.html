@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Quote - UPVC Windows | Door Empire Limited</title>
+    <link rel="stylesheet" href="quote.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span>📞 01530 273365</span>
+                    <span>✉️ sales@doorempire.com</span>
+                </div>
+                <div class="header-actions">
+                    <span>🕒 0 ITEMS £0</span>
+                    <button class="quote-btn">GET A QUOTE</button>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <div class="logo">
+                    <img src="./pics/logo.jpg" alt="Door Empire Limited" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="composite-doors.html">COMPOSITE DOORS</a></li>
+                    <li><a href="upvc-doors.html">UPVC DOORS</a></li>
+                    <li><a href="french-doors.html">FRENCH DOORS</a></li>
+                    <li><a href="patio-doors.html">PATIO DOORS</a></li>
+                    <li><a href="bifold-doors.html">BIFOLD DOORS</a></li>
+                    <li><a href="upvc-windows.html" class="active">UPVC WINDOWS</a></li>
+                    <li><a href="aluminium-windows.html">ALUMINIUM WINDOWS</a></li>
+                    <li><a href="roof-lanterns.html">ROOF LANTERNS</a></li>
+                    <li><a href="info.html">INFO</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Quote Form Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-header">
+                <h1>Request a Quote - UPVC Windows</h1>
+                <p>Energy-efficient UPVC windows made to measure. Get a personalized quote starting from £149 inc VAT.</p>
+            </div>
+
+            <div class="quote-form-container">
+                <form class="quote-form" id="upvcWindowQuote">
+                    <!-- Personal Information section -->
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Full Address</label>
+                            <textarea id="address" name="address" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- UPVC Window specific specifications -->
+                    <div class="form-section">
+                        <h3>UPVC Window Specifications</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="windowType">Window Type *</label>
+                                <select id="windowType" name="windowType" required>
+                                    <option value="">Select Window Type</option>
+                                    <option value="casement">Casement Window</option>
+                                    <option value="tilt-turn">Tilt & Turn Window</option>
+                                    <option value="sash">Sash Window</option>
+                                    <option value="bay">Bay Window</option>
+                                    <option value="bow">Bow Window</option>
+                                    <option value="fixed">Fixed Window</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="windowStyle">Window Style *</label>
+                                <select id="windowStyle" name="windowStyle" required>
+                                    <option value="">Select Style</option>
+                                    <option value="traditional">Traditional</option>
+                                    <option value="contemporary">Contemporary</option>
+                                    <option value="georgian">Georgian Bar</option>
+                                    <option value="cottage">Cottage Style</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="windowWidth">Window Width (mm) *</label>
+                                <input type="number" id="windowWidth" name="windowWidth" min="400" max="3000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="windowHeight">Window Height (mm) *</label>
+                                <input type="number" id="windowHeight" name="windowHeight" min="400" max="2500" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="windowColor">Frame Color *</label>
+                                <select id="windowColor" name="windowColor" required>
+                                    <option value="">Select Color</option>
+                                    <option value="white">White</option>
+                                    <option value="cream">Cream</option>
+                                    <option value="oak">Oak Effect</option>
+                                    <option value="rosewood">Rosewood</option>
+                                    <option value="grey">Grey</option>
+                                    <option value="black">Black</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="glazing">Glazing Type</label>
+                                <select id="glazing" name="glazing">
+                                    <option value="">Select Glazing</option>
+                                    <option value="double">Double Glazed</option>
+                                    <option value="triple">Triple Glazed</option>
+                                    <option value="acoustic">Acoustic Glass</option>
+                                    <option value="low-e">Low-E Glass</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="opening">Opening Configuration</label>
+                                <select id="opening" name="opening">
+                                    <option value="">Select Opening</option>
+                                    <option value="side-hung">Side Hung</option>
+                                    <option value="top-hung">Top Hung</option>
+                                    <option value="tilt-turn">Tilt & Turn</option>
+                                    <option value="fixed">Fixed (No Opening)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="hardware">Hardware Finish</label>
+                                <select id="hardware" name="hardware">
+                                    <option value="">Select Hardware</option>
+                                    <option value="white">White</option>
+                                    <option value="chrome">Chrome</option>
+                                    <option value="gold">Gold</option>
+                                    <option value="black">Black</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional requirements section -->
+                    <div class="form-section">
+                        <h3>Additional Requirements</h3>
+                        <div class="form-group">
+                            <label for="quantity">Quantity *</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="20" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="installation">Installation Required?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="installation" value="yes"> Yes, I need installation</label>
+                                <label><input type="radio" name="installation" value="no" checked> No, supply only</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline">Required Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select Timeline</option>
+                                <option value="asap">ASAP</option>
+                                <option value="1-2weeks">1-2 Weeks</option>
+                                <option value="3-4weeks">3-4 Weeks</option>
+                                <option value="1-2months">1-2 Months</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="additionalInfo">Additional Information</label>
+                            <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Please provide any additional details about your requirements..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Request Quote</button>
+                        <button type="reset" class="reset-btn">Clear Form</button>
+                    </div>
+                </form>
+
+                <div class="quote-info">
+                    <h3>UPVC Window Benefits</h3>
+                    <ul>
+                        <li>✓ Energy efficient A-rated windows</li>
+                        <li>✓ Low maintenance UPVC frames</li>
+                        <li>✓ Multi-point locking systems</li>
+                        <li>✓ Weather-tight seals</li>
+                        <li>✓ Starting from £149 inc VAT</li>
+                        <li>✓ 10-year guarantee</li>
+                    </ul>
+                    
+                    <div class="contact-box">
+                        <h4>Need Help?</h4>
+                        <p>Call our experts on <strong>01530 273365</strong></p>
+                        <p>Email: <strong>sales@doorempire.com</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Door Empire Limited</h3>
+                    <p>The UK's leading supplier of premium doors and windows. Quality guaranteed, prices unmatched.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="composite-doors.html">Composite Doors</a></li>
+                        <li><a href="upvc-doors.html">UPVC Doors</a></li>
+                        <li><a href="french-doors.html">French Doors</a></li>
+                        <li><a href="patio-doors.html">Patio Doors</a></li>
+                        <li><a href="bifold-doors.html">Bifold Doors</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📞 01530 273365</p>
+                    <p>✉️ sales@doorempire.com</p>
+                    <p>🏢 Door Empire Limited<br>
+                    Unit 5, Industrial Estate<br>
+                    Leicester, LE67 8HN</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Door Empire Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Quote - Roof Lanterns | Door Empire Limited</title>
+    <link rel="stylesheet" href="quote.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span>📞 01530 273365</span>
+                    <span>✉️ sales@doorempire.com</span>
+                </div>
+                <div class="header-actions">
+                    <span>🕒 0 ITEMS £0</span>
+                    <button class="quote-btn">GET A QUOTE</button>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <div class="logo">
+                    <img src="./pics/logo.jpg" alt="Door Empire Limited" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="composite-doors.html">COMPOSITE DOORS</a></li>
+                    <li><a href="upvc-doors.html">UPVC DOORS</a></li>
+                    <li><a href="french-doors.html">FRENCH DOORS</a></li>
+                    <li><a href="patio-doors.html">PATIO DOORS</a></li>
+                    <li><a href="bifold-doors.html">BIFOLD DOORS</a></li>
+                    <li><a href="upvc-windows.html">UPVC WINDOWS</a></li>
+                    <li><a href="aluminium-windows.html">ALUMINIUM WINDOWS</a></li>
+                    <li><a href="roof-lanterns.html" class="active">ROOF LANTERNS</a></li>
+                    <li><a href="info.html">INFO</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Quote Form Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-header">
+                <h1>Request a Quote - Roof Lanterns</h1>
+                <p>Transform your space with natural light from above. Premium roof lanterns starting from £899 inc VAT.</p>
+            </div>
+
+            <div class="quote-form-container">
+                <form class="quote-form" id="roofLanternQuote">
+                    <!-- Personal Information section -->
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Full Address</label>
+                            <textarea id="address" name="address" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Roof Lantern specific specifications -->
+                    <div class="form-section">
+                        <h3>Roof Lantern Specifications</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="lanternType">Lantern Type *</label>
+                                <select id="lanternType" name="lanternType" required>
+                                    <option value="">Select Lantern Type</option>
+                                    <option value="pyramid">Pyramid Roof Lantern</option>
+                                    <option value="flat">Flat Roof Lantern</option>
+                                    <option value="ridge">Ridge Roof Lantern</option>
+                                    <option value="contemporary">Contemporary Lantern</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="material">Frame Material *</label>
+                                <select id="material" name="material" required>
+                                    <option value="">Select Material</option>
+                                    <option value="aluminium">Aluminium</option>
+                                    <option value="upvc">UPVC</option>
+                                    <option value="timber">Timber</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="lanternWidth">Lantern Width (mm) *</label>
+                                <input type="number" id="lanternWidth" name="lanternWidth" min="800" max="4000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lanternLength">Lantern Length (mm) *</label>
+                                <input type="number" id="lanternLength" name="lanternLength" min="800" max="6000" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="lanternColor">Frame Color *</label>
+                                <select id="lanternColor" name="lanternColor" required>
+                                    <option value="">Select Color</option>
+                                    <option value="white">White</option>
+                                    <option value="grey">Grey</option>
+                                    <option value="black">Black</option>
+                                    <option value="anthracite">Anthracite Grey</option>
+                                    <option value="oak">Oak Effect</option>
+                                    <option value="bronze">Bronze</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="bars">Glazing Bars</label>
+                                <select id="bars" name="bars">
+                                    <option value="">Select Glazing Bars</option>
+                                    <option value="none">No Glazing Bars</option>
+                                    <option value="traditional">Traditional Bars</option>
+                                    <option value="contemporary">Contemporary Bars</option>
+                                    <option value="georgian">Georgian Style</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="glazing">Glazing Type</label>
+                                <select id="glazing" name="glazing">
+                                    <option value="">Select Glazing</option>
+                                    <option value="double">Double Glazed</option>
+                                    <option value="triple">Triple Glazed</option>
+                                    <option value="solar-control">Solar Control Glass</option>
+                                    <option value="self-cleaning">Self-Cleaning Glass</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="ventilation">Ventilation</label>
+                                <select id="ventilation" name="ventilation">
+                                    <option value="">Select Ventilation</option>
+                                    <option value="none">No Ventilation</option>
+                                    <option value="manual">Manual Opening Vents</option>
+                                    <option value="electric">Electric Opening Vents</option>
+                                    <option value="automatic">Automatic Vents</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional requirements section -->
+                    <div class="form-section">
+                        <h3>Additional Requirements</h3>
+                        <div class="form-group">
+                            <label for="quantity">Quantity *</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="installation">Installation Required?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="installation" value="yes"> Yes, I need installation</label>
+                                <label><input type="radio" name="installation" value="no" checked> No, supply only</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline">Required Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select Timeline</option>
+                                <option value="asap">ASAP</option>
+                                <option value="2-3weeks">2-3 Weeks</option>
+                                <option value="4-6weeks">4-6 Weeks</option>
+                                <option value="2-3months">2-3 Months</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="additionalInfo">Additional Information</label>
+                            <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Please provide any additional details about your requirements..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Request Quote</button>
+                        <button type="reset" class="reset-btn">Clear Form</button>
+                    </div>
+                </form>
+
+                <div class="quote-info">
+                    <h3>Roof Lantern Benefits</h3>
+                    <ul>
+                        <li>✓ Maximum natural light from above</li>
+                        <li>✓ Creates stunning focal points</li>
+                        <li>✓ Energy efficient glazing options</li>
+                        <li>✓ Weather-tight construction</li>
+                        <li>✓ Starting from £899 inc VAT</li>
+                        <li>✓ Various ventilation options</li>
+                    </ul>
+                    
+                    <div class="contact-box">
+                        <h4>Need Help?</h4>
+                        <p>Call our experts on <strong>01530 273365</strong></p>
+                        <p>Email: <strong>sales@doorempire.com</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Door Empire Limited</h3>
+                    <p>The UK's leading supplier of premium doors and windows. Quality guaranteed, prices unmatched.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="composite-doors.html">Composite Doors</a></li>
+                        <li><a href="upvc-doors.html">UPVC Doors</a></li>
+                        <li><a href="french-doors.html">French Doors</a></li>
+                        <li><a href="patio-doors.html">Patio Doors</a></li>
+                        <li><a href="bifold-doors.html">Bifold Doors</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📞 01530 273365</p>
+                    <p>✉️ sales@doorempire.com</p>
+                    <p>🏢 Door Empire Limited<br>
+                    Unit 5, Industrial Estate<br>
+                    Leicester, LE67 8HN</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Door Empire Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

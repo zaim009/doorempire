@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Quote - Composite Doors | Door Empire Limited</title>
+    <link rel="stylesheet" href="quote.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span>📞 01530 273365</span>
+                    <span>✉️ sales@doorempire.com</span>
+                </div>
+                <div class="header-actions">
+                    <span>🕒 0 ITEMS £0</span>
+                    <button class="quote-btn">GET A QUOTE</button>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <div class="logo">
+                    <img src="./pics/logo.jpg" alt="Door Empire Limited" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="composite-doors.html" class="active">COMPOSITE DOORS</a></li>
+                    <li><a href="upvc-doors.html">UPVC DOORS</a></li>
+                    <li><a href="french-doors.html">FRENCH DOORS</a></li>
+                    <li><a href="patio-doors.html">PATIO DOORS</a></li>
+                    <li><a href="bifold-doors.html">BIFOLD DOORS</a></li>
+                    <li><a href="upvc-windows.html">UPVC WINDOWS</a></li>
+                    <li><a href="aluminium-windows.html">ALUMINIUM WINDOWS</a></li>
+                    <li><a href="roof-lanterns.html">ROOF LANTERNS</a></li>
+                    <li><a href="info.html">INFO</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Quote Form Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-header">
+                <h1>Request a Quote - Composite Doors</h1>
+                <p>Get a personalized quote for your composite door requirements. Fill out the form below and we'll get back to you within 24 hours.</p>
+            </div>
+
+            <div class="quote-form-container">
+                <form class="quote-form" id="compositeDoorQuote">
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Full Address</label>
+                            <textarea id="address" name="address" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Door Specifications</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="doorStyle">Door Style *</label>
+                                <select id="doorStyle" name="doorStyle" required>
+                                    <option value="">Select Door Style</option>
+                                    <option value="traditional">Traditional</option>
+                                    <option value="contemporary">Contemporary</option>
+                                    <option value="cottage">Cottage Style</option>
+                                    <option value="georgian">Georgian</option>
+                                    <option value="victorian">Victorian</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="doorColor">Door Color *</label>
+                                <select id="doorColor" name="doorColor" required>
+                                    <option value="">Select Color</option>
+                                    <option value="white">White</option>
+                                    <option value="black">Black</option>
+                                    <option value="red">Red</option>
+                                    <option value="blue">Blue</option>
+                                    <option value="green">Green</option>
+                                    <option value="oak">Oak Effect</option>
+                                    <option value="rosewood">Rosewood</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="doorWidth">Door Width (mm) *</label>
+                                <input type="number" id="doorWidth" name="doorWidth" min="600" max="1200" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="doorHeight">Door Height (mm) *</label>
+                                <input type="number" id="doorHeight" name="doorHeight" min="1800" max="2400" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="glassType">Glass Type</label>
+                                <select id="glassType" name="glassType">
+                                    <option value="">Select Glass Type</option>
+                                    <option value="clear">Clear Glass</option>
+                                    <option value="obscure">Obscure Glass</option>
+                                    <option value="decorative">Decorative Glass</option>
+                                    <option value="none">No Glass</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="hardware">Hardware Finish</label>
+                                <select id="hardware" name="hardware">
+                                    <option value="">Select Hardware</option>
+                                    <option value="chrome">Chrome</option>
+                                    <option value="gold">Gold</option>
+                                    <option value="black">Black</option>
+                                    <option value="white">White</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Additional Requirements</h3>
+                        <div class="form-group">
+                            <label for="quantity">Quantity *</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="installation">Installation Required?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="installation" value="yes"> Yes, I need installation</label>
+                                <label><input type="radio" name="installation" value="no" checked> No, supply only</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline">Required Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select Timeline</option>
+                                <option value="asap">ASAP</option>
+                                <option value="1-2weeks">1-2 Weeks</option>
+                                <option value="3-4weeks">3-4 Weeks</option>
+                                <option value="1-2months">1-2 Months</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="additionalInfo">Additional Information</label>
+                            <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Please provide any additional details about your requirements..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Request Quote</button>
+                        <button type="reset" class="reset-btn">Clear Form</button>
+                    </div>
+                </form>
+
+                <div class="quote-info">
+                    <h3>Why Choose Door Empire Limited?</h3>
+                    <ul>
+                        <li>✓ Free nationwide delivery on orders over £250</li>
+                        <li>✓ Price promise guarantee</li>
+                        <li>✓ 5-star rated service</li>
+                        <li>✓ Made to measure doors</li>
+                        <li>✓ Fast lead times</li>
+                        <li>✓ Expert advice and support</li>
+                    </ul>
+                    
+                    <div class="contact-box">
+                        <h4>Need Help?</h4>
+                        <p>Call our experts on <strong>01530 273365</strong></p>
+                        <p>Email: <strong>sales@doorempire.com</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Door Empire Limited</h3>
+                    <p>The UK's leading supplier of premium doors and windows. Quality guaranteed, prices unmatched.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="composite-doors.html">Composite Doors</a></li>
+                        <li><a href="upvc-doors.html">UPVC Doors</a></li>
+                        <li><a href="french-doors.html">French Doors</a></li>
+                        <li><a href="patio-doors.html">Patio Doors</a></li>
+                        <li><a href="bifold-doors.html">Bifold Doors</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📞 01530 273365</p>
+                    <p>✉️ sales@doorempire.com</p>
+                    <p>🏢 Door Empire Limited<br>
+                    Unit 5, Industrial Estate<br>
+                    Leicester, LE67 8HN</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Door Empire Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
